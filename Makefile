@@ -1,0 +1,2 @@
+résumé:
+	pdflatex résumé.tex
