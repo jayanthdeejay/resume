@@ -1,5 +1,6 @@
 %% start of file `template.tex'.
 %% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%% Modified by and for Jayanth Dungavath
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License version 1.3c,
@@ -10,7 +11,7 @@
 
 % moderncv themes
 \moderncvstyle{casual}
-\moderncvcolor{green}
+\moderncvcolor{orange}
 \nopagenumbers{}
 
 % adjust the page margins
@@ -18,12 +19,11 @@
 \setlength{\hintscolumnwidth}{0.18\textwidth}
 
 % personal data
-\name{James}{Addison}
-\title{Software Engineer}
+\name{Jayanth (Jay)}{Dungavath}
+\title{Senior Software Engineer}
 \phone[mobile]{on-request}
 \email{on-request}
-\social[github]{jayaddison}
-\photo[64pt][0.4pt]{picture}
+\social[github]{jayanthdeejay}
 
 %----------------------------------------------------------------------------------
 %            content
@@ -33,73 +33,85 @@
 \makecvtitle
 
 \section{Skills}
-\cvdoubleitem{\textbf{Languages}}{Python, JavaScript, C\#, Java, C}{\textbf{Tools}}{Git, Vim, Debian, shell scripting}
-\cvdoubleitem{\textbf{Datastores}}{PostgreSQL, Microsoft SQL Server, \\ Elasticsearch, Solr, MongoDB}{\textbf{Frontend}}{XHTML, CSS, jQuery, PWA}
-\cvdoubleitem{\textbf{Systems}}{Kubernetes, Amazon Web Services, \\ Linux and network administration}{}{}
+\cvdoubleitem{\textbf{Languages}}{Ruby on Rails, Python, JavaScript, C, Perl}{\textbf{Systems}}{ Linux and systems administration, \\ Amazon Web Services, SAP Basis}
+\cvdoubleitem{\textbf{Datastores}}{PostgreSQL, ActiveFedora, \\ MySQL, Elasticsearch, Solr, \\ Oracle, IBM DB2}{\textbf{Frontend}}{XHTML}
+\cvdoubleitem{\textbf{Tools}}{Ansible, Git, Vim, Debian, \\ shell scripting, Travis/Circle CI}{}{}
 \cvdoubleitem{}{}{}{}
 
 \section{Experience}
-\cventry{May 2019--current}{Software Engineer}{\href{https://www.reciperadar.com}{RecipeRadar}}{Edinburgh, UK}{}{Developing a recipe search engine and meal planner catering for users' currently available ingredients
+\cventry{Aug 2018--Mar 2020}{Library Applications Developer}{\href{https://www.wpi.edu}{WPI}}{Worcester, USA}{}{Development lead for a Samvera Hyrax application development team to develop a {\href{https://digital.wpi.edu}{digital repository}} for digitized materials and research output.
 \newline{}
 \begin{itemize}
-\item Vision, design and implementation of a domain-specific search engine
-\item Planning and reporting on progress against a medium-term product roadmap
-\item Building upon open source software and providing technical feedback and fixes back upstream
+\item Developed the architecture and lead the implementation of systems and tools
+\item Collaborated with preservation \& metadata librarians, heads of departments, academics and IT
+\item Building upon open source software, evaluated needs and lead the agile developmental efforts
+\item Ansiblized server configuration and app deployment, CI/CD, streamlined data ingests ensuring application, data and system security
 \newline{}
 \end{itemize}}
 
-\cventry{Jan 2014--Jan 2019}{Senior Software Engineer}{\href{https://www.lyft.com}{Lyft}}{San Francisco, USA}{}{Payments, fraud detection, and infrastructure security
+\cventry{Aug 2017--Jun 2018}{Software Development Intern}{\href{https://www.uc.edu}{UC}}{Cincinnati, USA}{}{Early stage library applications developer at Langsam Library
 \newline{}
 \begin{itemize}
-\item Early member of the payments team, implementing and maintaining microservice functionality for a two-sided, real-time online marketplace consisting of drivers and passengers
-\item Developed automated fraud detection and financial safety features, including pre-ride passenger credit card authorizations and protection of driver accounts from account takeover attempts
-\item Implemented a system to ingest, query and alert on security-related event logs using open source tools (Elasticsearch + Elastalert) and AWS Lambda
-\item Experienced interviewer
+\item Student development intern to study and contribute to library application {\href{https://scholar.uc.edu}{Scholar UC}}'s development
+\item Automated bulk data exports and data integrity checks in Perl and also found an elegant solution to make application data read-only during migration
+\item Worked on pre and post migration application development efforts
+\item Completed advanced Samvera Camp hosted by Data Curation Experts on developer skills
 \newline{}
 \end{itemize}}
 
-\cventry{Jul 2013--Nov 2013}{Software Engineer}{\href{https://www.iteris.com}{Iteris / BT-Systems}}{Berkeley, USA}{}{Road traffic analysis system development
+\cventry{Oct 2015--Jul 2017}{Digitization Assistant}{\href{https://www.uc.edu}{UC}}{Cincinnati, USA}{}{Part-time student worker at Langsam Library
 \newline{}
 \begin{itemize}
-\item Built a Jersey RESTful web service to provide free text search over traffic-related geographic entities (freeways, detectors, county boundaries) using Solr and 'parboiled' parser generator
-\item Used PostGIS to work with road network data for San Francisco and county/district shapefiles for a number of U.S. states
-\item Wrote and tested S3 \& EC2 monitoring scripts for Nagios using Python and boto
+\item Trained in, devised a workflow and worked on {\href{https://digitization.phaseone.com/}{Phase One}} digitization system to digitize rare books, in collaboration with the Preservation Lab
+\item Automated file organization and data backups. 
+\item Redesigned and developed {\href{https://digital.libraries.uc.edu/}{Digital Collections and Repositories}} site.
+\item Trained and lead other student workers in digitization work.
 \newline{}
 \end{itemize}}
 
-\cventry{Aug 2012--Jun 2013}{Technical Lead, Search Services}{\href{https://www.meltwater.com}{Meltwater Group}}{San Francisco, USA}{}{Team lead for Meltwater's search engineering team.
+\cventry{Jan 2016--Apr 2016}{Teaching Assistant}{\href{https://www.uc.edu}{UC}}{Cincinnati, USA}{}{Assisted Prof. Fred Annexstein
 \newline{}
 \begin{itemize}
-\item Point of contact for search engine technology across multiple Meltwater products
-\item Led a team of eight talented Java developers, following agile methodology
-\item Helped canvas technical design/architecture direction
+\item Introduction to Computer Science using C++ and Python.
+\item Assisted in classroom instruction and also oversaw labs, grading \& feedback.
 \newline{}
 \end{itemize}}
 
-\cventry{Jul 2011--Jul 2012}{Software Engineer}{\href{https://www.meltwater.com}{Meltwater Group}}{San Francisco, USA}{}{Software engineer in data pipeline services.
+\cventry{Aug 2013--Jun 2014}{IT Manager}{\href{https://obcindia.co.in}{Oriental Bank of Commerce}}{Navi Mumbai, India}{}{IT Manager at Primary Data Center
 \newline{}
 \begin{itemize}
-\item Worked on backend data services for Meltwater Buzz, a social media monitoring platform ingesting large volumes of incoming data (\textasciitilde{}100 million documents daily)
-\item Developed and maintained data gathering programs which fed content into multiple data sinks via message queues
+\item Oracle and Finacle core banking solution administrator
+\item Data backups, tape management, digital money transfer mangement
+\item Nationwide daily, weekly, montly and quarterly branch open and closure operations management
+\item Performed overnight backend server restart procedures and bulk report precessing
 \newline{}
 \end{itemize}}
 
-\cventry{Jul 2007--Jun 2011}{Database Developer}{\href{https://www.skyscanner.net}{Skyscanner}}{Edinburgh, UK}{}{Early-stage junior technical hire.
+\cventry{Aug 2010--Mar 2013}{Systems Engineer}{\href{https://www.tcs.com/}{Tata Consultancy Services}}{Hyderabad, India}{}{SAP Basis Administrator
 \newline{}
 \begin{itemize}
-\item Developed and optimized user-facing database queries in a Microsoft SQL Server environment
-\item Handled revenue and search traffic analysis to assist business functions; this led to design and deployment of an internal logging platform
-\item Prototyped a collaborative social travel search engine as part of a team of three
+\item Trained in C++ and Unix and worked as an IBM DB2 Database admin
+\item SAP Basis Administrator responsible for managing 20 production and non-production systems
+\item Change Management process champion
+\item Trained in SAP Afaria
 \newline{}
 \end{itemize}}
 
 \section{Education}
-\cventry{2002--2007}{BSc. Computer Science}{University of Edinburgh}{}{\textit{1st Class Honours}}{}
+\cventry{2014-2018}{MSc. Computer Science}{\href{https://www.uc.edu/}{University of Cincinnati}}{Cincinnati, USA}{}{Completed 45 credits towards MS Computer Science
+\newline{}
+\begin{itemize}
+\item Specialization: Combinatorics, Graph Theory
+\item Worked on Dynamic Dial-A-Ride implementation
+\item Universal Cycles project to implement FKM and Duval algorithms to generate Universal Cycles of the order $10^{10}$ and $7^{7}$ respectively
+\item Other projects include fast Radix Sort implementation on GPUs and Unix style shell in Perl.
+\newline{}
+\end{itemize}}
+\cventry{2006--2010}{BTech. Computer Science and Engineering}{JNTU Anantapur}{}{\textit{1st Class with distinction}}{}
+
 
 \section{Interests}
-\cvitem{Cycling}{Short and long-distance bicycle touring}
-\cvitem{Homebrewing}{Basic small-batch brewing of various beer styles}
-\cvitem{Chess}{Recreational gaming and interest in AI-based chess engines}
+\cvline{}{Novice Chess Player; Amateur Photographer; Rubik\'s Cube; Yoga; Advanced Meditation;}
 
 \end{document}
 
